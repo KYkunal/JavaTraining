@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>testdemo</servlet-name>
+		<servlet-class>com.globalLogicServlet.FirstServ/servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>testdemo</servlet-name>
+		<url-pattern>/demo</url-pattern>
+	</servlet-mapping>
+  
+</web-app>

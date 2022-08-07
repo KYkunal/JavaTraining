@@ -1,0 +1,39 @@
+package com.globalJDBC_03_08;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class MyJdbc 
+{
+
+	public static void main(String[] args) 
+	{
+		try 
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","root");
+			Statement st=con.createStatement();
+			
+			// insertion
+//			  String insertQuery="insert into employee(id,name,fname,salary,company,deptid)values(101,'Akhil','XYZ',50000,'infotech',1001)";
+//			  st.execute(insertQuery);
+			
+			//deletion
+//			String deleteQu="delete from employee where id=101";
+//			st.executeUpdate(deleteQu);
+			
+			//updation
+			
+			String update="update employee set salary=80000 where id=1";
+			st.executeUpdate(update);
+			 
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+}

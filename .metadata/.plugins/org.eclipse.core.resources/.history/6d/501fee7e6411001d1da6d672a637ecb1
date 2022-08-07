@@ -1,0 +1,6 @@
+package com.globalLogicServlet;
+
+ public class FistrServlet extends HttpServlet
+{
+	protected void doGet(HttpServletRequest req,HttpServletResponse resp)
+}

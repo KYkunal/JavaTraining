@@ -1,0 +1,10 @@
+package com.globalJDBC_03_08;
+
+public class MyJdbc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

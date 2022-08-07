@@ -1,0 +1,50 @@
+package com.globallogic_28_07;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ListBinary 
+{
+
+	public static int search(List<Integer> l,int x, int low,int high)
+	{
+		while(low<=high)
+		{
+			int mid=low+(high-low)/2;
+			
+			if(l.get(mid)<x)
+				low=mid+1;
+			else
+				high=mid-1;
+		}
+			return -1;
+	}
+	public static void main(String[] args) 
+	{
+		
+		List<Integer> li=new ArrayList<Integer>();
+		li.add(12);
+		li.add(15);
+		li.add(17);
+		li.add(21);
+		li.add(24);
+		li.add(25);
+		li.add(31);
+		li.add(38);
+		for(int i:li)
+		{
+			System.out.print(i+" ");
+		}
+		int low=0;
+		int high=li.size()-1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println();
+		System.out.println("Enter search element");
+		
+		System.out.println(search(li,sc.nextInt(),low,high));
+		
+
+	}
+
+}

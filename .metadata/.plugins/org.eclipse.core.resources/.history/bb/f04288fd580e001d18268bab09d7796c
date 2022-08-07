@@ -1,0 +1,45 @@
+package com.globallogic_28_07;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ListLinear 
+{
+
+	public static void search(List l,int x)
+	{
+		int count=0;
+		for(int i=0;i<l.size();i++)
+		{
+			if(l.get(i).equals(i+1))
+				count=count+1;
+
+		}
+		if(count>0)
+			System.out.println("Element found");
+		else
+			System.out.println("Element not found");
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		List<Integer> li=new ArrayList();
+		li.add(12);
+		li.add(18);
+		li.add(31);
+		li.add(41);
+		li.add(51);
+		li.add(55);
+		li.add(15);
+		System.out.println("Given elements are:");
+		for(int l:li)
+		{
+			System.out.print(l+" ");
+		}
+		System.out.println("Enter search element");
+		search(li,sc.nextInt());
+
+	}
+
+}

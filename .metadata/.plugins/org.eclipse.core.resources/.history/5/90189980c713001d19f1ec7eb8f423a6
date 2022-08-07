@@ -1,0 +1,13 @@
+package com.globallogicMaven_04_08.MyMaven2;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

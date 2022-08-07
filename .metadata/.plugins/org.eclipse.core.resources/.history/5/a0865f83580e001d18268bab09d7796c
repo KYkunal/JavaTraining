@@ -1,0 +1,28 @@
+package com.globallogic_28_07;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListLinear 
+{
+
+	public static void main(String[] args) 
+	{
+		List<Integer> li=new ArrayList();
+		li.add(12);
+		li.add(18);
+		li.add(31);
+		li.add(41);
+		li.add(51);
+		li.add(55);
+		li.add(15);
+		for(int l:li)
+		{
+			System.out.print(l+" ");
+		}
+		
+		
+
+	}
+
+}

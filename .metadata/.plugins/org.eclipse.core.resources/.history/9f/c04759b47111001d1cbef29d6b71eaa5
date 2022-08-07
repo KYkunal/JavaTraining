@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servvlet-name>form</servvlet-name>
+		<servlet-class>com.htmlForm.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>form</servlet-name>
+		<url-pattern>/form</url-pattern>
+	</servlet-mapping>
+</web-app>

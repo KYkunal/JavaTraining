@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 	<bean class="com.globallogic_04_08.MyMaven.Student" name="student1">
+ 	<property name="studentId">
+ 		<value>22344</value>
+ 	</property>
+ 	
+ 	<property name="studentName">
+ 		<value>Akash Keshari</value>
+ 	</property>
+ 	
+ 	<property name="studentAddress">
+ 	<value>Varanasi</value>
+ 	
+ 	</property>
+ 	</bean>
+ 	<bean class="com.globallogic_04_08.MyMaven.Employe" name="emp1">
+ 	<property name="empId">
+ 	<value>121</value>
+ 	</property>
+ 	
+ 	<property name="empName">
+ 	<value>Arjun</value>
+ 	</property>
+ 	
+ 	<property name="empAddr">
+ 	<value>Pune</value>
+ 	</property>
+ 	</bean>
+ 
+ </beans>
